@@ -1,0 +1,51 @@
+/* ==========================================================================
+   RESPONSIVE OVERRIDES
+   Mobile-first adjustments layered on top of style.css
+   ========================================================================== */
+
+/* Large screens: give the hero status card more breathing room */
+@media (min-width: 1400px) {
+  .container-xl { max-width: 1320px; }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+  .hero { padding-top: calc(var(--nav-height) + 3rem); padding-bottom: 3.5rem; }
+  .counters { grid-template-columns: repeat(2, 1fr); row-gap: 2rem; }
+  .section { padding: 4.5rem 0; }
+  .status-card { margin-top: 2.5rem; }
+  .nav-collapse-signal {
+    background: var(--bg-2);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.2rem;
+    margin-top: .8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .hero-name { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .counters { grid-template-columns: repeat(2, 1fr); }
+  .section-sub { margin-bottom: 2rem; }
+  .contact-panel { padding: 1.6rem; }
+  .float-stack { right: 1rem; bottom: 1rem; }
+  .fab { width: 46px; height: 46px; font-size: 1.05rem; }
+  .cookie-banner { flex-direction: column; align-items: stretch; text-align: left; }
+  .pricing-card.featured { order: -1; }
+}
+
+@media (max-width: 575.98px) {
+  .hero { padding-top: calc(var(--nav-height) + 2rem); }
+  .status-card__body { padding: 1.1rem 1.2rem; font-size: .8rem; }
+  .section-title { font-size: 1.65rem; }
+  .card-signal { padding: 1.5rem; }
+}
+
+/* Print stylesheet — used for the CV / resume print button */
+@media print {
+  .site-header, .site-footer, .float-stack, #scroll-progress,
+  .cookie-banner, #loading-screen, .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+  a::after { content: " (" attr(href) ")"; font-size: .75em; }
+}

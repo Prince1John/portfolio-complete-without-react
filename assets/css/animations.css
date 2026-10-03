@@ -1,0 +1,73 @@
+/* ==========================================================================
+   ANIMATIONS
+   Scroll-reveal utility classes driven by IntersectionObserver in animations.js
+   ========================================================================== */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);
+}
+[data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+
+[data-reveal="fade"] { transform: none; }
+[data-reveal="left"] { transform: translateX(-28px); }
+[data-reveal="left"].is-visible { transform: translateX(0); }
+[data-reveal="right"] { transform: translateX(28px); }
+[data-reveal="right"].is-visible { transform: translateX(0); }
+[data-reveal="scale"] { transform: scale(.94); }
+[data-reveal="scale"].is-visible { transform: scale(1); }
+
+/* stagger children within a revealed group */
+[data-reveal-group] > * { transition-delay: calc(var(--stagger, 0) * 90ms); }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* Floating ambient motion for hero status card */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.float-ambient { animation: floatY 5s ease-in-out infinite; }
+
+/* Pulse used for "online" status dot */
+@keyframes pulseDot {
+  0% { box-shadow: 0 0 0 0 rgba(18,224,196,.5); }
+  70% { box-shadow: 0 0 0 8px rgba(18,224,196,0); }
+  100% { box-shadow: 0 0 0 0 rgba(18,224,196,0); }
+}
+.pulse-dot { animation: pulseDot 2s infinite; border-radius: 50%; }
+
+/* Skeleton shimmer for lazy-loading image placeholders */
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+img.lazy {
+  background: linear-gradient(90deg, var(--bg-2) 0%, var(--bg-3) 50%, var(--bg-2) 100%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+img.lazy.loaded { animation: none; background: none; }
+
+/* Fade-in for lightbox */
+.lightbox-overlay {
+  position: fixed; inset: 0; z-index: 2500;
+  background: rgba(6,10,18,0.92);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+  padding: 2rem;
+}
+.lightbox-overlay.open { opacity: 1; visibility: visible; }
+.lightbox-overlay img { max-width: 90vw; max-height: 85vh; border-radius: var(--radius-md); box-shadow: 0 30px 80px rgba(0,0,0,.5); }
+.lightbox-close {
+  position: absolute; top: 1.5rem; right: 1.5rem;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--bg-2); border: 1px solid var(--border-strong);
+  color: var(--text-0); display: flex; align-items: center; justify-content: center;
+}
+
+/* Loading screen glyph blink handled via existing blink keyframe in style.css */

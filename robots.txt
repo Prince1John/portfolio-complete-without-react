@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /assets/private/
+
+Sitemap: https://johnOngoma.dev/sitemap.xml

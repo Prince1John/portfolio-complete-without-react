@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://johnOngoma.dev/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://johnOngoma.dev/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://johnOngoma.dev/services.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://johnOngoma.dev/portfolio.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://johnOngoma.dev/websites.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://johnOngoma.dev/graphics.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://johnOngoma.dev/videos.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://johnOngoma.dev/youtube.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://johnOngoma.dev/pricing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://johnOngoma.dev/blog.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://johnOngoma.dev/contact.html</loc><changefreq>yearly</changefreq><priority>0.9</priority></url>
+</urlset>

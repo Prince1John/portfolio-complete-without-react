@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — John Ongoma</title>
+<meta name="description" content="Browse websites, graphic design, video editing and IT support projects by John Ongoma.">
+<link rel="canonical" href="https://johnOngoma.dev/portfolio.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Portfolio — John Ongoma">
+<meta property="og:description" content="Browse websites, graphic design, video editing and IT support projects by John Ongoma.">
+<meta property="og:image" content="https://johnOngoma.dev/assets/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230e1526%22/><text x=%2250%25%22 y=%2258%25%22 font-size=%2250%22 fill=%22%2312e0c4%22 text-anchor=%22middle%22 font-family=%22monospace%22>J</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body data-theme="dark">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-glyph">booting johnOngoma.dev …</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+<div id="scroll-progress"></div>
+
+<header class="site-header">
+  <nav class="container-xl d-flex align-items-center justify-content-between" aria-label="Primary">
+    <a href="index.html" class="brand">john<span class="dot">.</span>Ongoma</a>
+    <button class="nav-burger d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse d-lg-flex flex-lg-row justify-content-lg-between align-items-lg-center flex-grow-1 ms-lg-4" id="navCollapse">
+      <ul class="navbar-nav d-lg-flex flex-lg-row gap-lg-1 mb-3 mb-lg-0 mx-lg-auto list-unstyled nav-collapse-signal d-lg-contents">
+        <li><a class="nav-link-custom" href="index.html">Home</a></li>
+        <li><a class="nav-link-custom" href="about.html">About</a></li>
+        <li><a class="nav-link-custom" href="services.html">Services</a></li>
+        <li><a class="nav-link-custom" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-link-custom" href="pricing.html">Pricing</a></li>
+        <li><a class="nav-link-custom" href="blog.html">Blog</a></li>
+        <li><a class="nav-link-custom" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+        <button class="theme-toggle" aria-label="Switch to light mode" aria-pressed="false">
+          <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="contact.html" class="btn-signal">Start a project</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <section class="page-hero">
+    <div class="container-xl">
+      <p class="breadcrumb-signal"><a href="index.html">~</a> / portfolio</p>
+      <h1 class="section-title mt-2">Full portfolio</h1>
+      <p class="section-sub mb-0">Search or filter by category to find a relevant example quickly.</p>
+    </div>
+  </section>
+
+  <section class="section" data-portfolio-scope>
+    <div class="container-xl">
+      <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center mb-4">
+        <div class="d-flex flex-wrap gap-2" role="tablist" aria-label="Filter portfolio by category">
+          <button class="btn-ghost active" data-filter="all">All</button>
+          <button class="btn-ghost" data-filter="websites">Websites</button>
+          <button class="btn-ghost" data-filter="graphics">Graphics</button>
+          <button class="btn-ghost" data-filter="videos">Videos</button>
+          <button class="btn-ghost" data-filter="it">IT Technician</button>
+        </div>
+        <div style="min-width:240px;">
+          <input type="search" class="form-control form-control-signal" placeholder="Search projects…" aria-label="Search portfolio" data-portfolio-search>
+        </div>
+      </div>
+
+      <div class="row g-4" data-portfolio-grid>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="websites" data-title="Riverside Grocers e-commerce site" data-reveal="fade">
+          <div class="project-card">
+            <div class="browser-mock">
+              <div class="browser-mock__bar"><span class="dotgrp"><span></span><span></span><span></span></span><span class="browser-mock__url">riversidegrocers.co.ke</span></div>
+              <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/180/700/440" alt="Riverside Grocers website" loading="lazy" data-lightbox="https://picsum.photos/id/180/1400/900"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Riverside Grocers</h3>
+              <p>Responsive storefront with cart, filtering and mobile checkout.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">Bootstrap</span><span class="tag-chip">Formspree</span></div>
+              <div class="project-card__actions">
+                <a href="#" class="icon-btn" aria-label="Visit live website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="icon-btn" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="websites" data-title="Nyota Law Chambers" data-reveal="fade">
+          <div class="project-card">
+            <div class="browser-mock">
+              <div class="browser-mock__bar"><span class="dotgrp"><span></span><span></span><span></span></span><span class="browser-mock__url">nyotalaw.co.ke</span></div>
+              <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/48/700/440" alt="Nyota Law Chambers website" loading="lazy"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Nyota Law Chambers</h3>
+              <p>Corporate site with case studies and an appointment request form.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">SEO</span><span class="tag-chip">Accessible</span></div>
+              <div class="project-card__actions"><a href="#" class="icon-btn" aria-label="Visit live website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="websites" data-title="Savanna Coffee online store" data-reveal="fade">
+          <div class="project-card">
+            <div class="browser-mock">
+              <div class="browser-mock__bar"><span class="dotgrp"><span></span><span></span><span></span></span><span class="browser-mock__url">savannacoffee.co.ke</span></div>
+              <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/225/700/440" alt="Savanna Coffee online store" loading="lazy"></div>
+            </div>
+            <div class="project-card__body">
+              <h3>Savanna Coffee</h3>
+              <p>Product catalog with subscription sign-up and a blog for brewing guides.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">E-commerce</span><span class="tag-chip">Blog</span></div>
+              <div class="project-card__actions"><a href="#" class="icon-btn" aria-label="Visit live website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="graphics" data-title="Kilimani Church rebrand" data-reveal="fade">
+          <div class="project-card">
+            <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/292/700/440" alt="Kilimani Church brand identity" loading="lazy" data-lightbox="https://picsum.photos/id/292/1400/900"></div>
+            <div class="project-card__body">
+              <h3>Kilimani Church Rebrand</h3>
+              <p>Logo, bulletin templates, signage and social media kit.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">Branding</span><span class="tag-chip">Print</span></div>
+              <div class="project-card__actions"><a href="graphics.html" class="icon-btn" aria-label="View gallery"><i class="fa-solid fa-images"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="graphics" data-title="Savanna Coffee packaging" data-reveal="fade">
+          <div class="project-card">
+            <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/431/700/440" alt="Savanna Coffee product packaging" loading="lazy" data-lightbox="https://picsum.photos/id/431/1400/900"></div>
+            <div class="project-card__body">
+              <h3>Savanna Coffee Packaging</h3>
+              <p>Label design and social ad templates for a product launch.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">Packaging</span><span class="tag-chip">Social ads</span></div>
+              <div class="project-card__actions"><a href="graphics.html" class="icon-btn" aria-label="View gallery"><i class="fa-solid fa-images"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="videos" data-title="Amara and David wedding film" data-reveal="fade">
+          <div class="project-card">
+            <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/1011/700/440" alt="Wedding video thumbnail" loading="lazy"></div>
+            <div class="project-card__body">
+              <h3>Amara &amp; David — Wedding Film</h3>
+              <p>Same-day edit plus a 25-minute feature film delivered within a week.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">Premiere Pro</span><span class="tag-chip">Color grade</span></div>
+              <div class="project-card__actions"><a href="videos.html" class="icon-btn" aria-label="Watch"><i class="fa-solid fa-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="videos" data-title="Grace Chapel Sunday recap" data-reveal="fade">
+          <div class="project-card">
+            <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/1043/700/440" alt="Church service recap thumbnail" loading="lazy"></div>
+            <div class="project-card__body">
+              <h3>Grace Chapel — Sunday Recap</h3>
+              <p>Weekly highlight edits for livestream replay and YouTube.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">Weekly delivery</span><span class="tag-chip">YouTube</span></div>
+              <div class="project-card__actions"><a href="youtube.html" class="icon-btn" aria-label="View on YouTube page"><i class="fa-brands fa-youtube"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="it" data-title="Meridian Offices network setup" data-reveal="fade">
+          <div class="project-card">
+            <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/60/700/440" alt="Office network cabling" loading="lazy"></div>
+            <div class="project-card__body">
+              <h3>Meridian Offices — Network Overhaul</h3>
+              <p>Full re-cabling, Wi-Fi coverage fix and printer setup across two floors.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">Networking</span><span class="tag-chip">Hardware</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-portfolio-item data-category="it" data-title="St. Peter's Parish IT maintenance" data-reveal="fade">
+          <div class="project-card">
+            <div class="project-card__img"><img class="lazy" src="https://picsum.photos/id/119/700/440" alt="IT maintenance workstation" loading="lazy"></div>
+            <div class="project-card__body">
+              <h3>St. Peter's Parish — IT Maintenance Retainer</h3>
+              <p>Ongoing virus removal, Windows updates and hardware upgrades on a monthly retainer.</p>
+              <div class="tag-row mb-2"><span class="tag-chip">Maintenance</span><span class="tag-chip">Retainer</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="text-center text-2 mt-4" data-portfolio-empty style="display:none;">No projects match that search yet — try a different term.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container-xl">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a href="index.html" class="brand d-inline-flex mb-3">john<span class="dot">.</span>Ongoma</a>
+        <p class="text-2">Web development, design, video editing and IT support, all from one dependable freelancer based in Nairobi.</p>
+        <div class="footer-social mt-3">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Site</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Work</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="websites.html">Websites</a></li>
+          <li><a href="graphics.html">Graphics</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="youtube.html">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Stay in touch</h5>
+        <p class="text-2">Have a project in mind? I typically reply within 24 hours.</p>
+        <a href="contact.html" class="btn-ghost">Contact me</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>© <span id="year"></span> John Ongoma. All rights reserved.</span>
+      <span>Built with HTML, CSS &amp; vanilla JavaScript.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="float-stack">
+  <a href="https://wa.me/254700000000" class="fab fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <button class="fab fab-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</div>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie notice">
+  <p>This site uses minimal cookies to remember your theme preference. No tracking, no ads.</p>
+  <div class="d-flex gap-2">
+    <button class="btn-ghost" id="cookie-decline">Decline</button>
+    <button class="btn-signal" id="cookie-accept">Accept</button>
+  </div>
+</div>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/portfolio.js"></script>
+<script src="assets/js/gallery.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>
